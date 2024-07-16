@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(145deg, #1d1f21, #111);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.call-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(28, 28, 30, 0.85);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.caller-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.caller-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+}
+
+.caller-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.caller-number {
+    font-size: 18px;
+    color: #aaa;
+    margin: 5px 0 20px;
+}
+
+.call-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.action-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.action-button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.decline {
+    background-color: #ff3b30;
+    background-image: url('decline-icon.png'); /* يجب أن تحتوي على أيقونة رفض */
+}
+
+.answer {
+    background-color: #4cd964;
+    background-image: url('answer-icon.png'); /* يجب أن تحتوي على أيقونة قبول */
+}
+
+span {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
